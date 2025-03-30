@@ -1,19 +1,19 @@
 Pod::Spec.new do |spec|
-  spec.name         = "mailcore2-ios"
-  spec.version      = "0.6.4"
-  spec.summary      = "Mailcore 2 for iOS"
-  spec.description  = "MailCore 2 provide a simple and asynchronous API to work with e-mail protocols IMAP, POP and SMTP. The API has been redesigned from ground up."
-  spec.homepage     = "https://github.com/MailCore/mailcore2"
-  spec.license      = { :type => "BSD", :file => "LICENSE" }
-  spec.author       = "MailCore Authors"
-  spec.platform     = :ios, "8.0"
-  spec.source       = { :http => "https://storage.googleapis.com/fileserver.gxservers.com/mattmaddux/mailcore2/0.6.4.zip", :flatten => true }
-  spec.header_dir   = "MailCore"
+  spec.name          = 'mailcore2-ios'
+  spec.version       = '0.6.4'
+  spec.summary       = 'MailCore 2 for iOS'
+  spec.description   = 'MailCore 2 provides a simple and asynchronous API to work with e-mail protocols IMAP, POP, and SMTP.'
+  spec.homepage      = 'http://libmailcore.com'
+  spec.license       = { :type => 'BSD', :file => 'LICENSE' }
+  spec.authors       = 'MailCore Authors'
+  spec.source        = { :http => 'https://storage.googleapis.com/fileserver.gxservers.com/mattmaddux/mailcore2/0.6.4.zip', :flatten => true }
+  spec.platform     = :ios, '8.0'
   spec.requires_arc = false
-  spec.source_files = "cocoapods-build/include/MailCore/*.h"
-  spec.public_header_files = "cocoapods-build/include/MailCore/*.h"
-  spec.preserve_paths = "cocoapods-build/include/MailCore/*.h"
-  spec.vendored_libraries = "cocoapods-build/lib/libMailCore-ios.a"
-  spec.libraries = ["xml2", "iconv", "z", "c++", "resolv"]
-  spec.prepare_command = "scripts/build-mailcore2-ios-cocoapod.sh"
+  spec.header_dir = 'MailCore'
+  spec.public_header_files = 'mailcore2-ios/include/MailCore/*.h'
+  spec.preserve_paths = 'mailcore2-ios/include/MailCore/*.h'
+  spec.source_files = "mailcore2-ios/include/MailCore/*.h"
+  spec.vendored_libraries = 'mailcore2-ios/lib/libMailCore-ios.a'
+  spec.libraries = ['xml2', 'iconv', 'z', 'c++', 'resolv']
+
 end
